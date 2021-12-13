@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailsCollectionViewCell" id="gTV-IL-0wX" customClass="DetailsCollectionViewCell" customModule="trillhasPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trilha1" translatesAutoresizingMaskIntoConstraints="NO" id="dRh-SV-Bfk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Ad3-FE-6Ci"/>
+                            <constraint firstAttribute="width" constant="320" id="mbd-F3-2JS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dRh-SV-Bfk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2mg-Sl-kW6"/>
+                <constraint firstAttribute="trailing" secondItem="dRh-SV-Bfk" secondAttribute="trailing" id="50W-Xg-uv6"/>
+                <constraint firstAttribute="bottom" secondItem="dRh-SV-Bfk" secondAttribute="bottom" id="IIb-Oy-Mkl"/>
+                <constraint firstItem="dRh-SV-Bfk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aWF-Md-2ZL"/>
+            </constraints>
+            <size key="customSize" width="320" height="150"/>
+            <connections>
+                <outlet property="detailsImagesCell" destination="dRh-SV-Bfk" id="frK-Tj-h0D"/>
+            </connections>
+            <point key="canvasLocation" x="333.33333333333337" y="111.83035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="trilha1" width="274" height="184"/>
+    </resources>
+</document>

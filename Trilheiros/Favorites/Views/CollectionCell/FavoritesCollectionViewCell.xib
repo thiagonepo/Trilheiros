@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="FavoritesCollectionViewCell" customModule="Trilheiros" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trilha1" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-QD-04f">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="4VM-tw-Tmn"/>
+                            <constraint firstAttribute="height" constant="150" id="IhS-3G-8VH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cHj-cz-21Q">
+                        <rect key="frame" x="20" y="104.5" width="122" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Eh1-QD-04f" secondAttribute="bottom" id="4yt-qY-UEa"/>
+                <constraint firstAttribute="bottom" secondItem="cHj-cz-21Q" secondAttribute="bottom" constant="25" id="7fS-eJ-BsH"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Eh1-QD-04f" secondAttribute="trailing" id="AxI-VH-cim"/>
+                <constraint firstItem="Eh1-QD-04f" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="EXO-Xu-oNz"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="Eh1-QD-04f" secondAttribute="top" constant="44" id="aXO-3h-yRM"/>
+                <constraint firstAttribute="trailing" secondItem="cHj-cz-21Q" secondAttribute="trailing" constant="8" id="fuj-zN-BWM"/>
+                <constraint firstItem="cHj-cz-21Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="rtN-VJ-K7A"/>
+            </constraints>
+            <size key="customSize" width="150" height="170"/>
+            <connections>
+                <outlet property="favoritesImageView" destination="Eh1-QD-04f" id="2Vf-H4-vgw"/>
+                <outlet property="favoritesNameLabel" destination="cHj-cz-21Q" id="bUP-PH-rKP"/>
+            </connections>
+            <point key="canvasLocation" x="311.59420289855075" y="125.22321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="trilha1" width="274" height="184"/>
+    </resources>
+</document>
